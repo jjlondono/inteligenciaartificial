@@ -1,0 +1,451 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2017/10/untitled-ontology-4"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/usuario/ontologies/2017/10/untitled-ontology-4">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Declaration>
+        <Class IRI="#ENFERMEDAD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PACIENTE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SINTOMA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TRATAMIENTO"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ES_TRATAMIENTO_DE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PACIENTE_ESTA_DIAGNOSTICADO_DE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SE_TRATA_CON"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TIENE_SINTOMA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CEDULA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CODIGO"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EDAD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID_SEGURIDAD_SOCIAL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NOMBRE"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PESO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PAC_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PAC_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PAC_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SINTOMA_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SINTOMA_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SINTOMA_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TRATAMIENTO_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TRATAMIENTO_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TRATAMIENTO_3"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#PACIENTE"/>
+        <NamedIndividual IRI="#PAC_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PACIENTE"/>
+        <NamedIndividual IRI="#PAC_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PACIENTE"/>
+        <NamedIndividual IRI="#PAC_3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PACIENTE_ESTA_DIAGNOSTICADO_DE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SE_TRATA_CON"/>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+        <NamedIndividual IRI="#TRATAMIENTO_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+        <NamedIndividual IRI="#SINTOMA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PACIENTE_ESTA_DIAGNOSTICADO_DE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SE_TRATA_CON"/>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+        <NamedIndividual IRI="#TRATAMIENTO_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+        <NamedIndividual IRI="#SINTOMA_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PACIENTE_ESTA_DIAGNOSTICADO_DE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SE_TRATA_CON"/>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+        <NamedIndividual IRI="#TRATAMIENTO_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+        <NamedIndividual IRI="#SINTOMA_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <NamedIndividual IRI="#PAC_1"/>
+        <NamedIndividual IRI="#SINTOMA_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <NamedIndividual IRI="#PAC_2"/>
+        <NamedIndividual IRI="#SINTOMA_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <NamedIndividual IRI="#PAC_3"/>
+        <NamedIndividual IRI="#SINTOMA_3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+        <Literal datatypeIRI="&xsd;int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_1"/>
+        <Literal datatypeIRI="&xsd;string">DIARREA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+        <Literal datatypeIRI="&xsd;int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_2"/>
+        <Literal datatypeIRI="&xsd;string">ALERGIA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+        <Literal datatypeIRI="&xsd;int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#ENFERMEDAD_3"/>
+        <Literal datatypeIRI="&xsd;string">MIGRAÑA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CEDULA"/>
+        <NamedIndividual IRI="#PAC_1"/>
+        <Literal datatypeIRI="&xsd;int">1088292477</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EDAD"/>
+        <NamedIndividual IRI="#PAC_1"/>
+        <Literal datatypeIRI="&xsd;int">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID_SEGURIDAD_SOCIAL"/>
+        <NamedIndividual IRI="#PAC_1"/>
+        <Literal datatypeIRI="&xsd;int">123</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#PAC_1"/>
+        <Literal datatypeIRI="&xsd;string">JUAN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PESO"/>
+        <NamedIndividual IRI="#PAC_1"/>
+        <Literal datatypeIRI="&xsd;float">48.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CEDULA"/>
+        <NamedIndividual IRI="#PAC_2"/>
+        <Literal datatypeIRI="&xsd;int">14563290</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EDAD"/>
+        <NamedIndividual IRI="#PAC_2"/>
+        <Literal datatypeIRI="&xsd;int">31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID_SEGURIDAD_SOCIAL"/>
+        <NamedIndividual IRI="#PAC_2"/>
+        <Literal datatypeIRI="&xsd;int">456</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#PAC_2"/>
+        <Literal datatypeIRI="&xsd;string">ANGIE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PESO"/>
+        <NamedIndividual IRI="#PAC_2"/>
+        <Literal datatypeIRI="&xsd;float">53.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CEDULA"/>
+        <NamedIndividual IRI="#PAC_3"/>
+        <Literal datatypeIRI="&xsd;int">1234567.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EDAD"/>
+        <NamedIndividual IRI="#PAC_3"/>
+        <Literal datatypeIRI="&xsd;int">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID_SEGURIDAD_SOCIAL"/>
+        <NamedIndividual IRI="#PAC_3"/>
+        <Literal datatypeIRI="&xsd;int">789</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#PAC_3"/>
+        <Literal datatypeIRI="&xsd;string">PABLO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#PESO"/>
+        <NamedIndividual IRI="#PAC_3"/>
+        <Literal datatypeIRI="&xsd;float">70.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#SINTOMA_1"/>
+        <Literal datatypeIRI="&xsd;string">S1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#SINTOMA_1"/>
+        <Literal datatypeIRI="&xsd;string">DOLOR DE ESTOMAGO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#SINTOMA_2"/>
+        <Literal datatypeIRI="&xsd;string">S2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#SINTOMA_2"/>
+        <Literal datatypeIRI="&xsd;string">BROTE EN LA PIEL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#SINTOMA_3"/>
+        <Literal datatypeIRI="&xsd;string">S3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#SINTOMA_3"/>
+        <Literal datatypeIRI="&xsd;string">DOLOR DE CABEZA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#TRATAMIENTO_1"/>
+        <Literal datatypeIRI="&xsd;string">T1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#TRATAMIENTO_1"/>
+        <Literal datatypeIRI="&xsd;string">ACETAMINOFEM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#TRATAMIENTO_2"/>
+        <Literal datatypeIRI="&xsd;string">T2
+</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#TRATAMIENTO_2"/>
+        <Literal datatypeIRI="&xsd;string">ACETAMINOFEM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CODIGO"/>
+        <NamedIndividual IRI="#TRATAMIENTO_3"/>
+        <Literal datatypeIRI="&xsd;string">T3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOMBRE"/>
+        <NamedIndividual IRI="#TRATAMIENTO_3"/>
+        <Literal datatypeIRI="&xsd;string">ACETAMINOFEM</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#TIENE_SINTOMA"/>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ES_TRATAMIENTO_DE"/>
+        <Class IRI="#TRATAMIENTO"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PACIENTE_ESTA_DIAGNOSTICADO_DE"/>
+        <Class IRI="#PACIENTE"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SE_TRATA_CON"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <Class IRI="#SINTOMA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TIENE_SINTOMA"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ES_TRATAMIENTO_DE"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PACIENTE_ESTA_DIAGNOSTICADO_DE"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SE_TRATA_CON"/>
+        <Class IRI="#TRATAMIENTO"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#SINTOMA_DE"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TIENE_SINTOMA"/>
+        <Class IRI="#SINTOMA"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CEDULA"/>
+        <Class IRI="#PACIENTE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CODIGO"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CODIGO"/>
+        <Class IRI="#SINTOMA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CODIGO"/>
+        <Class IRI="#TRATAMIENTO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EDAD"/>
+        <Class IRI="#PACIENTE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NOMBRE"/>
+        <Class IRI="#ENFERMEDAD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NOMBRE"/>
+        <Class IRI="#PACIENTE"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NOMBRE"/>
+        <Class IRI="#SINTOMA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NOMBRE"/>
+        <Class IRI="#TRATAMIENTO"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PESO"/>
+        <Class IRI="#PACIENTE"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CEDULA"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CODIGO"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#EDAD"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NOMBRE"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PESO"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
